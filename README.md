@@ -11,7 +11,7 @@ Link do layout a ser desenvolvido: https://www.figma.com/file/Jgjk8tdDaQ4nHFHgQu
 
 ### 01 - O Básico a ser executado para concorrer a vaga ###
 * Fork o repositório e inicie o desevolvimento;
-* Desenvolva o layout que está no arquivo .xd. Atenção para responsividade. 
+* Atenção para responsividade. 
 Note que no repositório existe uma pasta src com alguns assets(Caso necessário, pois já tem tudo no figma). A fonte usada no layout é "Roboto", uma fonte google.
 
 Finalizando esses itens você terá terminado a etapa 01 da avaliação.
