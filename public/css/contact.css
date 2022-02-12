@@ -1,0 +1,64 @@
+.contact-page header {
+  background: #191816 !important; }
+.contact-page main {
+  padding-top: 80px; }
+.contact-page .contact {
+  width: 100%;
+  margin-top: 10%; }
+  .contact-page .contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contact-page .contact .container .contact-box {
+      width: 50%;
+      padding: 20px;
+      background: #084154;
+      border: 2px solid #3ec6e0;
+      border-radius: 20px;
+      box-sizing: border-box;
+      box-shadow: 2px 4px 7px #202020; }
+      @media (max-width: 600px) {
+        .contact-page .contact .container .contact-box {
+          width: 90%; } }
+      .contact-page .contact .container .contact-box .title-contact {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-top: 15px; }
+      .contact-page .contact .container .contact-box h3 {
+        font-family: "Robot", sans-serif;
+        font-size: 30px;
+        color: #ffffff;
+        text-shadow: 1px 4px 5px #202020;
+        border-bottom: 1px solid #3ec6e0; }
+    .contact-page .contact .container .form-contact form input[type="text"] {
+      height: 30px; }
+    .contact-page .contact .container .form-contact form textarea {
+      height: 60px; }
+    .contact-page .contact .container .form-contact form input[type="text"],
+    .contact-page .contact .container .form-contact form textarea {
+      width: 100%;
+      padding-left: 10px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: none;
+      border: none;
+      outline: none;
+      box-sizing: border-box; }
+    .contact-page .contact .container .form-contact form .send-button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px; }
+      .contact-page .contact .container .form-contact form .send-button input#submit_form {
+        width: 300px;
+        height: 55px;
+        background: #8ab8ec;
+        border-radius: 20px;
+        border: 1px solid #080505; }
+      .contact-page .contact .container .form-contact form .send-button input[value="Enviar"] {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Robot", sans-serif; }
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="public/css/header.css" />
+    <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/contact.css" />
+    <link rel="stylesheet" href="public/css/footer.css" />
+    <title> Agence N1 - Project </title>
+</head>
+
+<body class="contact-page">
+
+    <header>
+
+        <div class="container">
+    
+          <!-- header left -->
+    
+          <div class="header-content-left flex-a-center">
+    
+            <div class="hamburguer">
+              <button class="hamburguer-btn">
+                <img class="img-h-btn" src="svgs/icon_hamburguer.svg" />
+                <div class="menu-hamburguer">
+                  <nav class="menu-hamburguer-games">
+                    <ul class="menu-submenu">
+                      <li class="title-games"> Luta </li>
+                      <li class="game"> Mortal Kombat </li>
+                      <li class="game"> Smash Bros</li>
+                      <li class="game"> Killer Instict</li>
+                      <li class="game"> DBZ kakarot</li>
+                    </ul>
+                    <ul class="menu-submenu">
+                      <li class="title-games"> Ação / Aventura </li>
+                      <li class="game"> GTA V </li>
+                      <li class="game"> Tomb Rider </li>
+                      <li class="game"> HALO </li>
+                      <li class="game"> Call of Duty </li>
+                    </ul>
+                    <ul class="menu-submenu">
+                      <li class="title-games"> Corrida </li>
+                      <li class="game"> NEED For SPEED </li>
+                      <li class="game"> Forza Horizon </li>
+                    </ul>
+                  </nav>
+                </div>
+              </button>
+    
+              <div class="menu-content">
+    
+              </div>
+    
+            </div>
+    
+            <div class="logo-n1">
+              <a href="index.html">
+                <img src="img/plus-logo01.png" />
+              </a>
+            </div>
+    
+          </div>
+    
+    
+          <!-- header right -->
+    
+          <div class="header-content-right">
+            <nav class="contato-buscar-carrinho">
+              <ul class="flex-a-center">
+                <li>
+                  <a href="contact.html">
+                    <img src="svgs/paper-plane.svg" />
+                    <span class="only-tablet"> Contato </span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#">
+                    <img src="svgs/search-solid.svg" />
+                    <span class="only-tablet"> Busca </span>
+                  </a>
+                </li>
+    
+                <li class="quantity-cart">
+                  <a href="#">
+                    <img src="svgs/shopping-bag-solid.svg" />
+                    <div class="quantity-cart-circle">
+                      <span id="total-quantity-cart">
+                        0
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+
+
+    <!-- main  -->
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="title-contact">
+                        <h3><b>CONTATO</b></h3>
+                    </div>
+    
+                    <div class="form-contact">
+    
+                        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                            <input type="text" name="subject" placeholder="Assunto" /> <br> <br>
+                            <input type="text" name="extra_nome" placeholder="Nome" /> <br> <br>
+                            <input type="text" name="extra_email" placeholder="E-mail" /> <br> <br>
+    
+                            <textarea name="text" placeholder="Mensagem"></textarea> <br> <br>
+    
+                            <input type="hidden" name="access_token" value="m837ong2zz02weqmlufttdx8" />
+                            <input type="hidden" name="success_url" value="https://github.com/urameshirj" target="_blank" />
+                            <input type="hidden" name="error_url" value="https://github.com/urameshirj" target="_blank" />
+                            <br>
+    
+                            <!-- send botton-->
+                            <div class="send-button">
+                              <input id="submit_form" type="submit" value="ENVIAR" />
+                            </div>  
+    
+                        </form>
+    
+                        <!-- script - send button -->
+                        <script>
+                            var submitButton = document.getElementById("submit_form");
+                            var form = document.getElementById("email_form");
+                            form.addEventListener("submit", function (e) {
+                                setTimeout(function () {
+                                    submitButton.value = "Enviando...";
+                                    submitButton.disabled = true;
+                                }, 1);
+                                console.log(e)
+                            });
+    
+                        </script>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-left">
+          <img src="img/litle-logo01.png" />
+        </div>
+    
+        <div class="footer-right">
+          <p>Agência N1 - Todos os direitos reservados</p>
+        </div>
+    
+    </footer>
+
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script src="src/js/scripts.js"></script>
+
+</body>
+
+</html>

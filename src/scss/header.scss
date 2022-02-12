@@ -1,0 +1,199 @@
+/* HEADER */
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-content-left {
+    display: flex;
+    .hamburguer {
+
+      &.h-mobile {
+        .hamburguer-btn {
+           > img.close {
+            margin-top: -12px;
+            margin-left: -12px;
+            margin-right: -8px;
+            margin-bottom: -12px;
+           }
+          .menu-hamburguer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            z-index: -1;
+            padding-top: 40px;
+            overflow: auto;
+
+            &::before {
+              display: none;
+            }
+
+            nav.menu-hamburguer-games {
+              width: calc(100% - 60px);
+              flex-direction: column;
+
+              .menu-submenu {
+                &:not(:last-child) {
+                  border-bottom: 1px solid #062C38;
+                  padding: 10px 0;
+                }
+
+                .game {
+                  margin: 5px 0px 5px 0px;
+                  width: calc(100% - 16px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        position: relative;
+        background: transparent;
+        border: none;
+        outline: none;
+
+        .menu-hamburguer {
+          display: none; 
+          position: absolute;
+          top: 43px;
+          left: -24px;
+          padding-top: 15px;
+          color: #ffffff;
+          background: #084154;
+          box-sizing: border-box;
+          border: 2px solid #3ec6e0;
+          border-radius: 5px;
+          box-shadow: 10px 10px 0px 2px #3ec6e0;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 28px;
+            transform: rotate(45deg);
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: #3ec6e0;
+            z-index: -1;
+          }
+
+          nav.menu-hamburguer-games {
+            display: flex;
+            padding: 45px 30px;
+            ul.menu-submenu {
+              text-align: left;
+              list-style: none;
+              li {
+                margin: 5px 35px 5px 35px;
+                min-width: max-content;
+                display: flex;
+                align-items: center;
+                width: 166px;
+                height: 33px;
+                padding-left: 16px;
+                padding-top: 2px;
+
+                &.title-games {
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 19px;
+                }
+                &.game {
+                  font-size: 14px;
+                  line-height: 16px;
+
+                  &:hover {
+                    border-radius: 5px;
+                    background-color: #3ec6e0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .logo-n1 {
+    margin-left: 43px;
+    @media (max-width: 599px) {
+      margin-left: 28px;
+    }
+    a {
+      img {
+        width: 163px;
+        height: 35px;
+
+        @media (max-width: 599px) {
+          width: 107px;
+          height: 23px;
+        }
+      }
+    }
+  }
+  
+  .header-content-right {
+    .contato-buscar-carrinho {
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          height: 30px;
+          padding: 0 40px;
+
+          @media (max-width:800px) {
+            padding: 0 6px;
+            border: none;
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid #ffffff;
+
+            @media (max-width:800px) {
+              border: none;
+            }
+          }
+          a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+          img {
+          }
+          span {
+            margin-left: 15px;
+          }
+          &.quantity-cart {
+            .quantity-cart-circle {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 23px;
+              height: 23px;
+              margin-left: 6px;
+              border-radius: 23px;
+              background: #3ec6e0;
+              span {
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
