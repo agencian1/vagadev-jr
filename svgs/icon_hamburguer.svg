@@ -50,7 +50,7 @@
   <g
      id="icon_hamburguer"
      transform="translate(-382 -48)"
-     style="fill:#000000">
+     style="fill:#fff">
     <rect
        id="Retângulo_2"
        data-name="Retângulo 2"
@@ -59,7 +59,7 @@
        rx="1.5"
        transform="translate(382 48)"
        fill="#fff"
-       style="fill:#000000" />
+       style="fill:#fff" />
     <rect
        id="Retângulo_3"
        data-name="Retângulo 3"
@@ -68,7 +68,7 @@
        rx="1.5"
        transform="translate(382 58.451)"
        fill="#fff"
-       style="fill:#000000" />
+       style="fill:#fff" />
     <rect
        id="Retângulo_4"
        data-name="Retângulo 4"
@@ -77,6 +77,6 @@
        rx="1.5"
        transform="translate(382 69)"
        fill="#fff"
-       style="fill:#000000" />
+       style="fill:#fff" />
   </g>
 </svg>

@@ -1,0 +1,66 @@
+section.shop-popup {
+    display:none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(8, 65, 84, 0.62);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    .popup-shop-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400.21px;
+        background: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+
+        @media (max-width: 600px) {
+            width: 90%;
+        }
+
+        .close-box {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 13px;
+            margin-right: 13px;
+            .close-btn{
+                background:transparent;
+                border:none;
+            img {
+                width: 100%;
+                height: auto;
+            }
+          }
+        }
+        .popup-title {
+            display: flex;
+            justify-content: center;
+            margin-top:20px;
+            .popup-line {
+                width: 13%;
+                border-top:1px solid #084154;
+                margin-top: 20px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 35px;
+                text-align: center;
+                color: #084154;
+            }
+        }
+        .image-popup{
+          display:flex;
+          justify-content:center;
+          height: 265px;
+          overflow: hidden;
+          img{
+              width:100%;
+              height:max-content;
+          }
+        }
+    }
+}
